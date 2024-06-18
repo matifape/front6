@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="estilos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Contact form</title>
+  </head>
+  <body>
+    <header>
+      <div id="contenedor-enviado" class="enviado oculto">
+        <div class="arriba">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="21"
+            fill="none"
+            viewBox="0 0 20 21"
+          >
+            <path
+              fill="#fff"
+              d="M14.28 7.72a.748.748 0 0 1 0 1.06l-5.25 5.25a.748.748 0 0 1-1.06 0l-2.25-2.25a.75.75 0 1 1 1.06-1.06l1.72 1.72 4.72-4.72a.75.75 0 0 1 1.06 0Zm5.47 2.78A9.75 9.75 0 1 1 10 .75a9.76 9.76 0 0 1 9.75 9.75Zm-1.5 0A8.25 8.25 0 1 0 10 18.75a8.26 8.26 0 0 0 8.25-8.25Z"
+            />
+          </svg>
+          <b>Message Sent!</b>
+        </div>
+        <p> Thanks for completing the form. We'll be in touch soon!</p>
+      </div>
+
+     
+    </header>
+    <main>
+      <form class="formulario" novalidate>
+        <h1>Contact Us</h1>
+        <div class="datos-personales">
+          <div class="datos">
+            <label for="nombre">First Name</label>
+            <input id="nombre" type="text" required />
+            <span class="error-message">This field is required</span>
+          </div>
+          <div class="datos">
+            <label for="apellido">Last Name</label>
+            <input type="text" id="apellido" required />
+            <span class="error-message">This field is required</span>
+          </div>
+        </div>
+        <div class="email">
+          <label for="mail">Email Address</label>
+          <input type="email" name="" id="mail" required />
+          <span class="error-message">Please enter a valid email address</span>
+        </div>
+
+        <div class="seleccion">
+          <p>Query Type</p>
+          <div class="contenedor-opciones">
+            <div class="botones">
+              <label for="input1">
+                <input
+                  class="label"
+                  type="radio"
+                  name="opciones"
+                  id="input1"
+                />General Enquiry
+              </label>
+              <label for="input2">
+                <input
+                  class="label"
+                  type="radio"
+                  name="opciones"
+                  id="input2"
+                />Support Request
+              </label>
+            </div>
+            <span class="error-message">Please select a query type</span>
+          </div>
+        </div>
+
+        <div class="mensaje">
+          <p>Message</p>
+          <textarea
+            class="mensaje-usuario"
+            id="campo-texto"
+            required
+          ></textarea>
+          <span class="error-message">This field is required</span>
+        </div>
+        <div class="check">
+          <label for="chekeo">
+            <input type="checkbox" id="chekeo" required />I consent to being
+            contacted by the team
+          </label>
+          <span class="error-message">
+            To submit this form, please consent to being contacted
+          </span>
+        </div>
+
+        <button id="boton-enviar" class="enviar">Submit</button>
+      </form>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a target="_blank" href="https://www.linkedin.com/in/matias-almasia-505101209/">Matias Almasia</a>.
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
